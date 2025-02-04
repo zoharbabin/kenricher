@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """
-generate_metadata_kaltura.py - Process Kaltura media entries to generate and update metadata using OpenAI.
+kenricher.py - Process Kaltura media entries to generate and update metadata using OpenAI.
 """
 
 import argparse
@@ -8,9 +8,9 @@ import logging
 import os
 import sys
 import time
-from concurrent.futures import ThreadPoolExecutor, as_completed, TimeoutError
 from enum import Enum
 from typing import List, Optional, Dict, Any
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 import requests
 from dotenv import load_dotenv

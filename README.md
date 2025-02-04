@@ -156,3 +156,4 @@ This project is licensed under the MIT License. Feel free to use, modify, and di
 ---
 
 *Now go on—generate metadata like a boss and let your videos shine!*
+

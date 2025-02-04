@@ -34,6 +34,8 @@ If you’re tired of bland metadata and want to spice things up with AI magic, y
 - **Kaltura Integration:** Fetches media entries and updates metadata via the Kaltura API.
 - **Rich Console UI:** Provides real-time feedback with progress spinners, tables, and color-coded logging.
 - **Retry Decorators & Custom Logging:** Ensures robust error-handling and smooth execution.
+- **Batch Processing:** Process multiple entries by category ID or specific entry IDs.
+- **Auto-Update Mode:** Option to automatically update entries without manual confirmation.
 - **Simulation Mode:** Test drive metadata generation without updating your live entries.
 
 ---
@@ -103,15 +105,23 @@ Replace `<your_kaltura_partner_id>`, `<your_kaltura_admin_secret>`, `<your_kaltu
 To process all video/audio entries:
 
 ```bash
-python generate_metadata_kaltura.py
+python kenricher.py
 ```
 
-### Process a Single Entry
+### Process Specific Entries
 
-If you want to process only a specific entry, use the `--entry_id` flag:
+If you want to process specific entries, use the `--entry_ids` flag:
 
 ```bash
-python generate_metadata_kaltura.py --entry_id <ENTRY_ID>
+python kenricher.py --entry_ids <ENTRY_ID1,ENTRY_ID2,...>
+```
+
+### Process Entries by Category
+
+To process all entries within specific categories:
+
+```bash
+python kenricher.py --category_ids <CATEGORY_ID1,CATEGORY_ID2,...>
 ```
 
 ### Simulation Mode
@@ -119,7 +129,26 @@ python generate_metadata_kaltura.py --entry_id <ENTRY_ID>
 Want to test the metadata generation without actually updating entries? Use the simulation mode:
 
 ```bash
-python generate_metadata_kaltura.py --simulate
+python kenricher.py --simulate
+```
+
+### Auto-Update Mode
+
+To automatically update entries without manual confirmation:
+
+```bash
+python kenricher.py --auto-update
+```
+
+### Additional Options
+
+- **Debug Mode:** Enable verbose logging
+  ```bash
+  python kenricher.py --debug
+  ```
+- **Session Privileges:** Specify custom Kaltura session privileges
+  ```bash
+  python kenricher.py --privileges "disableentitlement"
 ```
 
 This mode lets you preview the metadata output without committing changes to your Kaltura entries. It’s like a dress rehearsal before the main event!

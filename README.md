@@ -151,38 +151,12 @@ python kenricher.py --auto-update
 - **Session Privileges:** Specify custom Kaltura session privileges
   ```bash
   python kenricher.py --privileges "disableentitlement"
-```
-
-This mode lets you preview the metadata output without committing changes to your Kaltura entries. It’s like a dress rehearsal before the main event!
-
----
-
-## Enhancements & Contributing
-
-We welcome contributions that make this project even more awesome—yes, even if you just have a *pun* in mind. Here’s how you can jump in:
-
-1. **Fork the Repository:** Create your own version of the project.
-2. **Create a Feature Branch:** Keep your enhancements isolated.
-3. **Code with Style:** Follow Python best practices and maintain the project's modularity.
-4. **Test Thoroughly:** Ensure your changes don’t break the existing functionality.
-5. **Submit a Pull Request:** Share your brilliance with the community.
-
-For major changes, please open an issue first to discuss what you’d like to change. We love good ideas and good humor, so don't be shy—let’s make metadata generation fun and functional!
-
+  ```
 ---
 
 ## License
 
-This project is licensed under the MIT License. Feel free to use, modify, and distribute it as long as you include the original license and attribution.
-
----
-
-## Acknowledgements
-
-- **Kaltura:** For the powerful media platform and API.
-- **OpenAI:** For providing the AI behind the metadata magic.
-- **Rich, coloredlogs, and friends:** For spicing up our console output and logs.
-- **Contributors:** A big thank you to everyone who makes open-source projects awesome.
+This project is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute it as long as you include the original license and attribution.
 
 ---
 

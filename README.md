@@ -2,6 +2,8 @@
 
 *Because your videos deserve more than just captions—give them a metadata makeover!*
 
+Kenricher is an open-source tool that leverages AI to automatically enrich and optimize Kaltura media metadata, enhancing video discoverability and engagement. Designed for content creators and developers, it streamlines metadata management to help you achieve a polished, professional digital presence.
+
 ---
 
 ## Table of Contents
